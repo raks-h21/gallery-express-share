@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+# Memora - 3D Art Gallery
 
-## Project info
+A stunning, immersive 3D art gallery application where you can create, share, and experience your memories and artworks in a beautiful virtual space.
 
-**URL**: https://lovable.dev/projects/e29334fb-2f5b-4add-976b-0c4d59fc0b6f
+## ✨ Features
 
-## How can I edit this code?
+### 🎨 **Gallery Management**
+- Create unlimited galleries with custom names
+- Upload images with titles and descriptions
+- Attach audio narrations to artworks
+- Edit and delete galleries easily
+- Multi-gallery dashboard
 
-There are several ways of editing your application.
+### 🌐 **Advanced Sharing**
+- **QR Code Generation**: Generate scannable QR codes for instant sharing
+- **Shareable Links**: Create compressed URLs that encode your entire gallery
+- **Social Sharing**: Share directly to Twitter and Facebook
+- **No Backend Required**: All data is compressed and embedded in the URL
 
-**Use Lovable**
+### 🎭 **Immersive 3D Experience**
+- Interactive 3D gallery with smooth animations
+- Dynamic lighting with spotlights on each artwork
+- Mouse parallax camera movement
+- Horizontal scrolling navigation
+- Floating and rotating artwork animations
+- Vignette post-processing effects
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e29334fb-2f5b-4add-976b-0c4d59fc0b6f) and start prompting.
+### 🎵 **Audio Features**
+- Attach audio files to artworks
+- Play/pause controls in 3D space
+- Single audio playback (auto-pause others)
+- Audio narration for guided tours
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🎯 **User Experience**
+- Modern dark theme with gold accents
+- Glass morphism UI design
+- Smooth animations and transitions
+- Responsive design
+- Intuitive navigation
+- Beautiful typography (Playfair Display + Inter)
 
-**Use your preferred IDE**
+### 🔐 **Authentication**
+- Simple user registration and login
+- Local storage-based authentication
+- Per-user gallery management
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+```bash
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Usage
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Register/Login**: Create an account or login
+2. **Create Gallery**: Click "Create Gallery" from dashboard
+3. **Add Artworks**: Upload images, add titles and descriptions
+4. **Optional Audio**: Attach audio narrations to artworks
+5. **Save**: Click "Save Gallery" when ready
+6. **View in 3D**: Switch to "View 3D" mode to experience your gallery
+7. **Share**: Use the share button to generate QR codes and links
 
-**Use GitHub Codespaces**
+## 🎨 Technology Stack
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **React** + **TypeScript**: Core framework
+- **React Three Fiber**: 3D rendering
+- **@react-three/drei**: 3D helpers and utilities
+- **@react-three/postprocessing**: Visual effects
+- **Three.js**: 3D engine
+- **Tailwind CSS**: Styling system
+- **shadcn/ui**: UI components
+- **qrcode.react**: QR code generation
+- **LZ-String**: Data compression for sharing
+- **Vite**: Build tool
 
-## What technologies are used for this project?
+## 📱 Features in Detail
 
-This project is built with:
+### Gallery Sharing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The sharing system uses advanced compression to embed entire galleries (including images and audio) into shareable URLs:
 
-## How can I deploy this project?
+1. Images and audio are converted to base64
+2. Data is compressed using LZ-String
+3. Compressed data is URL-encoded
+4. QR codes point to the generated URLs
+5. Recipients can view galleries without authentication
 
-Simply open [Lovable](https://lovable.dev/projects/e29334fb-2f5b-4add-976b-0c4d59fc0b6f) and click on Share -> Publish.
+### 3D Gallery
 
-## Can I connect a custom domain to my Lovable project?
+The 3D viewer features:
+- Dynamic spotlight illumination
+- Smooth camera movements with mouse tracking
+- Floating artwork animations
+- Text rendering for titles and descriptions
+- HTML overlays for interactive audio controls
+- Post-processing vignette effect
 
-Yes, you can!
+## 🎯 Design Philosophy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**Elegant Simplicity**: Clean, sophisticated interface inspired by high-end art galleries
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Performance**: Optimized 3D rendering with smooth 60fps animations
+
+**Accessibility**: Intuitive controls and clear visual hierarchy
+
+**Shareability**: Frictionless sharing with QR codes and compressed links
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🌟 Credits
+
+Built with ❤️ using Lovable.dev
+
+Fonts: Playfair Display (serif) + Inter (sans-serif)
